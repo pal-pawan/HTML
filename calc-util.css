@@ -11,6 +11,7 @@ border-radius: 9px;
 border-color: chartreuse;
 background-color: black;
 margin: 2px;
+transition: color 300ms;
 
 }
 input.input {
@@ -19,4 +20,7 @@ border-radius: 6px;
 font-size: x-large;
 max-width: 160px;
 padding: 5px 10px
+}
+button.Button:hover{
+    color: yellow;
 }

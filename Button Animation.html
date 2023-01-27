@@ -1,0 +1,45 @@
+<!doctype html>
+<head>
+    <title> Namoona </title>
+<style>
+    .button{
+        text-decoration: none;
+        border-radius: 5px;
+        border-color: black;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: rgb(238, 142, 16);
+        padding: 5px 10px;
+        position: relative;
+        overflow: hidden;
+        transition: color 1s;
+    }
+    .button:hover{
+        color:rgb(53, 180, 133);
+    }
+    .button::before{
+        content: '';
+        position: absolute;
+        top:0px;
+        left: -50px;
+        width: 0px;
+        height: 100%;
+        background-color: rgb(180, 53, 53);
+        transform: skewX(35deg);
+        z-index: -1;
+        transition:width 1s;
+    }
+    .button:hover::before{
+        width: 150%;
+    }
+</style>
+</head> 
+<body>
+<h1>Button skew() animation</h1>
+<div>
+<button class="button"> Pawan Pal</button> <br>
+<button class="button"> Portfolio</button> <br>
+<button class="button"> Leave a Like</button> <br>
+</div>
+</body>
+</html>
