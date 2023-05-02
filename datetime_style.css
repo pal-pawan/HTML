@@ -1,0 +1,17 @@
+h1{
+    font-family: 'Bruno Ace SC', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+p{
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(357deg, rgb(210 54 54), #6cf1f1);
+}
