@@ -1,0 +1,24 @@
+.text-center{
+    text-align: center;
+}
+.Button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bfbfbf;
+}
+button.Button{padding: 15px;
+            border-radius: 9px;
+            border-color: brown;
+            background: linear-gradient(#92E1E2,#0D4671);
+            margin: 2px;
+            transition: color 300ms;
+            filter:drop-shadow(2px 3px 2px brown)}
+input.input {border:inset;
+            border-color: #c6a93d;
+            border-radius: 6px;
+            font-size: x-large;
+            max-width: 160px;
+            padding: 5px 10px}
+button.Button:hover{
+    color: brown;
+    cursor: pointer;
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+
+<head>
+    <title> Namoona </title>
+    <style>
+        .button {
+            margin-bottom: 1rem;
+            background: linear-gradient(160deg, purple, orange);
+            text-decoration: none;
+            border-radius: 5px;
+            border-color: black;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgb(238, 142, 16);
+            padding: 5px 10px;
+            position: relative;
+            overflow: hidden;
+            transition: color 1s;
+        }
+
+        .button:hover {
+            color: rgb(9, 34, 24);
+            scale: 1.05;
+            
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: -50px;
+            width: 0px;
+            height: 100%;
+            background: linear-gradient(#bff098, #6fd6ff);
+            transform: skewX(25deg);
+            z-index: -1;
+            transition: width 1s;
+        }
+
+        .button:hover::before {
+            width: 150%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    Click here for more info on how to use PyScript.
+    
+    Please be advised that PyScript is very alpha and under heavy development. There are many known issues, from usability to loading times, and you should expect things to change often. We encourage people to play and explore with PyScript, but at this time we do not recommend using it for production.
+    
+    
+    pyscript_dev
+    @pyscript_dev
+</head>
+
+<body>
+    <py-script>
+import datetime
+
+def greetMe():
+    hour=int(datetime.datetime.now().hour)
+    if hour>=0 and hour<12:
+        print("Good Morning Sir, May you have a wonderful day ahead!")
+    elif hour>=12 and hour<=18:
+        print("Good Afternoon Sir!, May your Day be cheerful!")
+    else:
+        print("Good Evening Sir!, May your Hardwork bring better results!")
+
+if __name__ =="__main__":
+    greetMe()
+    </py-script>
+    <h1>Button skew() animation</h1>
+    <div>
+        <button class="button"> Pawan Pal</button> <br>
+        <button class="button"> Portfolio</button> <br>
+        <button class="button"> Leave a Like</button> <br>
+    </div>
+</body>
+
+</html>
