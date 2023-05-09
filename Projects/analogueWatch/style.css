@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+.fullWatch {
+    background-color: #000;
+  }
+  
+  .watch {
+    position: relative;
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+  }
+  
+  .digital {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  .analogue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #222;
+    border: 8px solid #17a664;
+  }
+  
+  .hour-hand,
+  .minute-hand,
+  .second-hand {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform-origin: bottom;
+  }
+  
+  .hour-hand {
+    width: 8px;
+    height: 40%;
+    background-color: #FF9800;
+    z-index: 3;
+    transform-origin: 50% 85%;
+  }
+  
+  .minute-hand {
+    width: 6px;
+    height: 45%;
+    background-color: #8BC34A;
+    z-index: 2;
+    transform-origin: 90% 75%;
+  }
+  
+  .second-hand {
+    width: 2px;
+    height: 50%;
+    background-color: #f00;
+    z-index: 4;
+    transform-origin: 100% 85%;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    z-index: 4;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+  
+ 
