@@ -9,6 +9,10 @@
     margin: 50px auto;
     width: 300px;
     height: 300px;
+    scale: 150%;
+    top: 150px;
+    background: #2f4f4f;
+    border-radius: 10%;
   }
   
   .digital {
@@ -35,8 +39,8 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: #222;
-    border: 8px solid #17a664;
+    background-color: #19231f;
+    border: 8px solid #c5bac4;
   }
   
   .hour-hand,
@@ -45,37 +49,39 @@
     position: absolute;
     top: 20%;
     left: 50%;
+    right: 50%;
     transform-origin: bottom;
   }
   
   .hour-hand {
-    width: 8px;
-    height: 40%;
-    background-color: #FF9800;
+    width: 6px;
+    height: 35%;
+    top: 25%;
+    background-color: #57707a;
     z-index: 3;
-    transform-origin: 50% 85%;
+    transform-origin: 50% 77%;
   }
   
   .minute-hand {
-    width: 6px;
+    width: 4px;
     height: 45%;
-    background-color: #8BC34A;
+    background-color: #7b919c;
     z-index: 2;
-    transform-origin: 90% 75%;
+    transform-origin: 93% 74%;
   }
   
   .second-hand {
     width: 2px;
     height: 50%;
-    background-color: #f00;
+    background-color: #989daa;
     z-index: 4;
-    transform-origin: 100% 85%;
+    transform-origin: 100% 67%;
   }
   
   .center {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 49%;
     width: 12px;
     height: 12px;
     border-radius: 50%;
