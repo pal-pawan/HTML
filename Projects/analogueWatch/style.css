@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
 .fullWatch {
-    background-color: #000;
+  background-color: #000;
   }
   
   .watch {
@@ -11,21 +11,17 @@
     height: 300px;
     scale: 150%;
     top: 150px;
-    background: #2f4f4f;
+    background: url(bg_1.png);
+    background-size: contain;
     border-radius: 10%;
+    filter: drop-shadow(5px 3px);
   }
   
   .digital {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    color: #fff;
+    color: #91d4e5;
     text-shadow: 1px 1px 2px #000;
   }
   
@@ -39,8 +35,11 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: #19231f;
-    border: 8px solid #c5bac4;
+    background:url(bg_2.jfif);
+    filter: drop-shadow(3px 3px );
+    background-size: 300px 300px;
+    background-position: center;
+    border: 8px solid rgba(37, 37, 42, 0.4);
   }
   
   .hour-hand,
@@ -57,7 +56,9 @@
     width: 6px;
     height: 35%;
     top: 25%;
-    background-color: #57707a;
+    background-color: #ff2b2b;
+    border: solid #fff 2px;
+    border-radius: 5px;
     z-index: 3;
     transform-origin: 50% 77%;
   }
@@ -65,7 +66,9 @@
   .minute-hand {
     width: 4px;
     height: 45%;
-    background-color: #7b919c;
+    background-color: #ff2b2b;
+    border: solid #fff 2px;
+    border-radius: 3px;
     z-index: 2;
     transform-origin: 93% 74%;
   }
@@ -73,7 +76,9 @@
   .second-hand {
     width: 2px;
     height: 50%;
-    background-color: #989daa;
+    background-color: #ffaa00;
+    border: solid #fff 2px;
+    border-radius: 3px;
     z-index: 4;
     transform-origin: 100% 67%;
   }
@@ -82,10 +87,11 @@
     position: absolute;
     top: 50%;
     left: 49%;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #ccc;
+    border: solid #fff 1px;
     z-index: 4;
   }
   
